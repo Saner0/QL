@@ -235,7 +235,7 @@ if ($.isNode() && process.env.CHECKCK_ALLNOTIFY) {
                         const DisableCkBody = await DisableCk(tempid);
                         if (DisableCkBody.code == 200) {
                             if ($.isNode() && WP_APP_TOKEN_ONE) {
-                                strNotifyOneTemp = `京东账号: ${$.nickName || $.UserName2} 已失效,自动禁用成功!\n如果要继续挂机，请在下面网址重新登录.`
+                                strNotifyOneTemp = `京东账号: ${$.nickName || $.UserName2} 已失效,自动禁用成功!\n如果要继续挂机,请在下面网址重新登录.`
 
                                     if (strAllNotify)
                                         strNotifyOneTemp += `\n` + strAllNotify;
@@ -247,7 +247,7 @@ if ($.isNode() && process.env.CHECKCK_ALLNOTIFY) {
                             TempErrorMessage = ReturnMessageTitle + ` 已失效,自动禁用成功!\n`;
                         } else {
                             if ($.isNode() && WP_APP_TOKEN_ONE) {
-                                strNotifyOneTemp = `京东账号: ${$.nickName || $.UserName2} 已失效!\n如果要继续挂机，请在下面网址重新登录.`
+                                strNotifyOneTemp = `京东账号: ${$.nickName || $.UserName2} 已失效!\n如果要继续挂机,请在下面网址重新登录.`
 
                                     if (strAllNotify)
                                         strNotifyOneTemp += `\n` + strAllNotify;
