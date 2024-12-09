@@ -240,7 +240,7 @@ if ($.isNode() && process.env.CHECKCK_ALLNOTIFY) {
                                     if (strAllNotify)
                                         strNotifyOneTemp += `\n` + strAllNotify;
 
-                                    await notify.sendNotifybyWxPucher(`${$.name}`, strNotifyOneTemp, `${$.UserName2}`,'\n登录网址:https://tz.lz86.top:39395',`账号过期通知`);
+                                    await notify.sendNotifybyWxPucher(`${$.name}`, strNotifyOneTemp, `${$.UserName2}`,'登录网址:https://tz.lz86.top:39395',`账号过期通知`);
                             }
                             console.log(`京东账号${$.index} : ${$.nickName || $.UserName2} 已失效,自动禁用成功!\n`);
                             TempDisableMessage = ReturnMessageTitle + ` (自动禁用成功!)\n`;
@@ -252,7 +252,7 @@ if ($.isNode() && process.env.CHECKCK_ALLNOTIFY) {
                                     if (strAllNotify)
                                         strNotifyOneTemp += `\n` + strAllNotify;
 
-                                    await notify.sendNotifybyWxPucher(`${$.name}`, strNotifyOneTemp, `${$.UserName2}`,'\n登录网址:https://tz.lz86.top:39395',`账号过期通知`);
+                                    await notify.sendNotifybyWxPucher(`${$.name}`, strNotifyOneTemp, `${$.UserName2}`,'登录网址:https://tz.lz86.top:39395',`账号过期通知`);
                             }
                             console.log(`京东账号${$.index} : ${$.nickName || $.UserName2} 已失效,自动禁用失败!\n`);
                             TempDisableMessage = ReturnMessageTitle + ` (自动禁用失败!)\n`;
